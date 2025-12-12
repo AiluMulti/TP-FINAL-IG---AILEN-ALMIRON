@@ -202,6 +202,7 @@ p {
     padding-bottom: 100px;
     color: #F2AEC7;
     text-align: center;
+    justify-content: center;
 }
 
 #presentacion {
@@ -407,6 +408,7 @@ footer {
 
     .formulario { width: 80%; }
 }
+
 
 
 
