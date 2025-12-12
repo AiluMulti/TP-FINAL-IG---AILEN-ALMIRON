@@ -3,8 +3,6 @@
     src: url(fuente/SLNTHLE.ttf);
 }
 
-
-
 body {
     background-image: url(img/background.jpg);
     background-repeat: no-repeat;
@@ -115,10 +113,10 @@ p {
     padding: 20px;
 }
 
-.img-noticias {
+/*.img-noticias {
     width: 100%;
     max-width: 800px;
-}
+}*/
 
 .videosh{
     width: 500px;
@@ -408,6 +406,7 @@ footer {
 
     .formulario { width: 80%; }
 }
+
 
 
 
