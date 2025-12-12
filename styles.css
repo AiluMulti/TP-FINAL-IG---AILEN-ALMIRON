@@ -91,7 +91,7 @@ nav ul li a:active { color: lightgrey; }
 #bienvenido {
     background-image: url(img/sh2-inicio.jpg);
     background-size: cover;
-    margin: 50px auto;
+    margin: 30px auto;
 }
 
 .tituloBienvenido, .textoBienvenido {
@@ -390,6 +390,7 @@ footer {
 
     .formulario { width: 80%; }
 }
+
 
 
 
