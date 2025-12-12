@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="../../../styles.css">
+    <title>SILENT HILL 2</title>
+</head>
+<body>
+    <img src="img/logo.png" alt="Logo Silent Hill 2" class="logo">
+    <h1>FAN PAGE</h1>
+
+    <div id="menu">
+        <nav>
+            <ul>
+                <li><a href="../../../index.html">INICIO</a></li>
+                <li class="borde"><a href="../../historia/historia.html">HISTORIA</a></li>
+                <li class="borde"><a href="../personajes.html">PERSONAJES</a></li>
+                <li class="borde"><a href="../../galeria/galeria.html">GALERIA</a></li>
+                <li class="borde"><a href="../../noticias/noticias.html">NOTICIAS</a></li>
+                <li class="borde"><a href="../../juego/juego.html">JUEGO</a></li>
+                <li class="borde"><a href="../../contacto/contacto.html">CONTACTO</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <h1 class="tituloPersonajes">MARIA</h1>
+
+    <section id="personaje-biografia">
+        <h2 class="visually-hidden">Biografía del personaje María</h2>
+
+        <img src="img/maria-foto.png" class="fotoBiografia" alt="Foto de Maria Silent Hill 2">
+
+        <div id="biografia">
+
+        <article class="datosPersonajes">
+            <h3 class="visually-hidden">Datos del personaje</h3>
+            <p>Género: Femenino
+            <br>Edad: Aproximadamente 25
+            <br>Ocupación: Desconocida (posible bailarina)
+            <br>Estado: Incierto / Variable
+            <br>Afiliaciones: James Sunderland, Mary Shepherd-Sunderland (doble psíquico)
+            <br>Debut: Silent Hill 2
+            <br>Apariciones posteriores: SH2 Remake 2024, The Arcade, Book of Memories, HD Collection, Dead by Daylight
+            <br>Actrices de voz: Monica Horgan, Mary Elizabeth McGlynn, Erica Lindbeck, Yūko Kaida
+            </p>
+        </article>
+
+        <article class="papel">
+            <h3 class="visually-hidden">Historia dentro de la trama</h3>
+            <p>María apareció misteriosamente en Silent Hill,
+                con una apariencia casi idéntica a Mary, la difunta esposa de James.<br><br>
+
+                A diferencia de Mary, María es extrovertida, seductora e inestable emocionalmente,
+                generando confusión y atracción en James.<br><br>
+
+                A lo largo del juego, María muere repetidamente y regresa sin explicación,
+                lo que intensifica el tormento psicológico de James.<br><br>
+
+                Aunque demuestra emociones reales e incluso deseos propios
+                en el escenario extra “Born from a Wish”,
+                su existencia está ligada al trauma de James.<br><br>
+
+                Finalmente, se revela que María es una manifestación
+                del deseo, culpa y negación del protagonista,
+                creada por Silent Hill a partir del recuerdo de Mary.<br><br>
+
+                María obliga a James a enfrentar la verdad
+                para decidir entre redención o condena.<br>
+            </p>
+        </article>
+
+        </div>
+    </section>
+
+    <footer>© Ailén Almirón Entertainment</footer>
+
+<script>
+    var menuSticky = document.getElementById("menu");
+
+    window.addEventListener("scroll", function(){
+        if (window.pageYOffset > 13) {
+            menuSticky.classList.add("scrolled");
+        } else {
+            menuSticky.classList.remove("scrolled");
+        }
+    });
+</script>
+</body>
+</html>

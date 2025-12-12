@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="../../../styles.css">
+    <title>SILENT HILL 2</title>
+</head>
+<body>
+    <img src="img/logo.png" alt="Logo Silent Hill 2" class="logo">
+    <h1>FAN PAGE</h1>
+
+    <div id="menu">
+        <nav>
+            <ul>
+                <li><a href="../../../index.html">INICIO</a></li>
+                <li class="borde"><a href="../../historia/historia.html">HISTORIA</a></li>
+                <li class="borde"><a href="../personajes.html">PERSONAJES</a></li>
+                <li class="borde"><a href="../../galeria/galeria.html">GALERIA</a></li>
+                <li class="borde"><a href="../../noticias/noticias.html">NOTICIAS</a></li>
+                <li class="borde"><a href="../../juego/juego.html">JUEGO</a></li>
+                <li class="borde"><a href="../../contacto/contacto.html">CONTACTO</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <h1 class="tituloPersonajes">MARY SHEPHERD-SUNDERLAND</h1>
+
+    <section id="personaje-biografia">
+        <h2 class="visually-hidden">Biografía del personaje Mary Shepherd-Sunderland</h2>
+
+        <img src="img/mary-foto.png" class="fotoBiografia" alt="Foto de Mary Shepherd-Sunderland">
+
+        <div id="biografia">
+
+        <article class="datosPersonajes">
+            <h3 class="visually-hidden">Datos del personaje</h3>
+            <p>Género: Femenino
+            <br>Edad: Aproximadamente 30 años
+            <br>Ocupación: Desconocida
+            <br>Estado: Fallecida (según los hechos del juego)
+            <br>Afiliaciones: James Sunderland (esposo), María (doble psíquico), Frank Sunderland (suegro)
+            <br>Debut: Silent Hill 2
+            <br>Apariciones posteriores: SH3, Book of Memories, SH2 Remake 2024, HD Collection, Dead by Daylight
+            <br>Actrices de voz:
+            <br>Monica Horgan, Mary Elizabeth McGlynn, Erica Lindbeck, Yūko Kaida
+            </p>
+        </article>
+
+        <article class="papel">
+            <h3 class="visually-hidden">Historia dentro de la trama</h3>
+            <p>Mary Shepherd-Sunderland fue la amada esposa de James,
+                una mujer cariñosa y con una profunda sensibilidad.<br><br>
+
+                Su enfermedad terminal deterioró su cuerpo y su estabilidad emocional,
+                llenando de dolor y tensión su relación con James.<br><br>
+
+                Aunque a veces se mostraba irritable y distante,
+                Mary seguía amando a su esposo
+                y deseaba recuperar su vida junto a él.<br><br>
+
+                En cartas y mensajes, Mary pide perdón por su actitud
+                y expresa cuánto deseaba volver a ser feliz con James.<br><br>
+
+                Su muerte es el núcleo emocional del juego,
+                y el peso de la culpa obliga a James
+                a emprender un viaje hacia la verdad en Silent Hill.<br><br>
+
+                Mary representa el amor genuino y el duelo,
+                recordándonos que el dolor de perder a alguien
+                puede convertirse en un infierno personal.<br>
+            </p>
+        </article>
+
+        </div>
+    </section>
+
+    <footer>© Ailén Almirón Entertainment</footer>
+
+<script>
+    var menuSticky = document.getElementById("menu");
+
+    window.addEventListener("scroll", function(){
+        if (window.pageYOffset > 13) {
+            menuSticky.classList.add("scrolled");
+        } else {
+            menuSticky.classList.remove("scrolled");
+        }
+    });
+</script>
+</body>
+</html>

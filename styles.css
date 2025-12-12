@@ -1,0 +1,313 @@
+@font-face {
+    font-family: 'silenthill';
+    src: url(fuente/SLNTHLE.ttf);
+}
+
+
+
+body {
+    background-image: url(img/background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    width: 80%;
+    margin: auto;
+    font-family: 'silenthill';
+    color: white;
+    min-height: 100vh;
+    padding-bottom: 100px;
+}
+
+.logo {
+    width: 40%;
+    padding: 30px;
+}
+
+h1, h2, h3 {
+    font-family: 'silenthill';
+    text-align: center;
+    color: aliceblue;
+}
+
+h1 { padding-bottom: 20px; }
+h2 { padding-top: 100px; }
+h3 { margin: 20px 0; }
+
+
+
+#menu {
+    position: sticky;
+    top: 0;
+    z-index: 777;
+    display: flex;
+    justify-content: space-around;
+    background-color: transparent;
+    border-bottom: solid rgb(102, 0, 0) 1px;
+    transition: background-color 0.5s;
+}
+
+#menu.scrolled { background-color: #000; }
+
+#menu ul {
+    list-style: none;
+    display: inline-flex;
+    font-size: 25px;
+    padding: 10px;
+    margin: 0;
+}
+
+#menu ul li { padding: 0 30px; }
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    transition: box-shadow 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #0D0D0D;
+    box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.5);
+    border-radius: 100px;
+    color: rgb(109, 0, 0);
+}
+
+nav ul li a:active { color: lightgrey; }
+
+#menu-toggle { display: none; }
+
+#menu label {
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+    color: white;
+    padding: 10px 20px;
+}
+
+
+
+#bienvenido {
+    background-image: url(img/sh2-inicio.jpg);
+    background-size: cover;
+    margin: 50px auto;
+}
+
+.tituloBienvenido, .textoBienvenido {
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+}
+
+p {
+    color: white;
+    display: flex;
+    padding: 30px;
+}
+
+
+
+.tituloPersonajes {
+    text-align: center;
+    padding: 30px;
+}
+
+.personajesFotos {
+    transition: transform 0.5s ease-in-out;
+    padding: 20px;
+    cursor: pointer;
+}
+
+.personajesFotos:hover { transform: scale(1.1); }
+
+.noDecoracion { text-decoration: none; }
+
+#biografia {
+    background-size: cover;
+    width: 70%;
+    display: flex;
+    margin: auto;
+}
+
+#personaje-biografia {
+    display: flex;
+    padding: 40px;
+}
+
+.fotoBiografia {
+    width: 30%;
+}
+
+.papel {
+    background-image: url(img/papel-biografia.png);
+    background-size: cover;
+    padding: 90px;
+    width: 80%;
+    margin: auto;
+}
+
+.datosPersonajes {
+    width: 40%;
+    background-color: rgba(160, 124, 124, 0.226);
+    margin: 10px;
+    text-align: left;
+}
+
+
+
+.historia {
+    width: 70%;
+    text-align: left;
+    margin: 0 auto;
+    color: whitesmoke;
+    padding: 40px;
+}
+
+.historia img {
+    padding: 30px;
+    display: block;
+    margin: auto;
+}
+
+
+.formulario {
+    background-color: darkred;
+    width: 25%;
+    padding: 25px;
+    border-radius: 10px;
+    margin: 0 auto 5px;
+}
+
+.formu { margin: 10px; }
+
+#confirmacion {
+    display: none;
+    padding-bottom: 100px;
+    color: #F2AEC7;
+    text-align: center;
+}
+
+#presentacion {
+    background-color: black;
+    color: darkred;
+    width: 25%;
+    text-align: center;
+    border-radius: 20px;
+    padding: 20px;
+    margin: 0 auto;
+}
+
+#galeria-seccion {
+    padding: 50px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+#galeria-seccion h2 {
+    font-family: 'silenthill', sans-serif;
+    color: white;
+    margin-bottom: 30px;
+}
+
+#galeria {
+    column-count: 4;
+    column-gap: 15px;
+}
+
+.ajustarImg {
+    width: 100%;
+    margin-bottom: 15px;
+    display: block;
+    break-inside: avoid; 
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.ajustarImg:hover {
+    transform: scale(1.05);
+}
+
+
+
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    background-color: rgb(102, 0, 0);
+}
+
+
+@media (max-width: 768px) {
+
+    #menu ul {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background-color: rgba(0,0,0,0.9);
+        z-index: 999;
+    }
+
+    #menu ul li {
+        padding: 15px 0;
+        text-align: center;
+    }
+
+    #menu label { display: block; }
+
+    #menu-toggle:checked + label + ul {
+        display: flex;
+    }
+
+    .tituloBienvenido, .textoBienvenido {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #personaje-biografia {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+
+    .fotoBiografia, .datosPersonajes {
+        width: 90%;
+        margin: 10px 0;
+    }
+
+    .historia {
+        width: 95%;
+        padding: 20px;
+    }
+
+    .videosh { width: 300px; }
+
+    .historia img { width: 300px; }
+
+    .logo { width: 200px; }
+
+    .formulario { width: 80%; }
+}
+
+@media (max-width: 480px) {
+
+    .videosh { width: 200px; }
+
+    .historia img { width: 250px; }
+
+    .logo { width: 200px; }
+
+    .formulario { width: 80%; }
+}
+
+
+
+
+
+
+
+
+
