@@ -226,7 +226,89 @@ p {
     transform: scale(1.05);
 }
 
+#contenedor-principal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
 
+#contenedor-interno {
+    position: relative;
+    max-width: 90%;
+    max-height: 85%;
+}
+
+#imagen-activa {
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 10px;
+    transition: opacity 0.3s ease;
+    display: block;
+    margin: auto;
+}
+
+
+#btn-cerrar,
+#btn-siguiente,
+#btn-retroceder {
+    position: absolute;
+    border: none;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(5px);
+    color: white;
+    font-size: 25px;
+    padding: 12px;
+    cursor: pointer;
+    border-radius: 50%;
+    transition: transform 0.2s ease;
+}
+
+#btn-cerrar:hover,
+#btn-siguiente:hover,
+#btn-retroceder:hover {
+    transform: scale(1.15);
+}
+
+#btn-cerrar {
+    top: -50px;
+    right: -20px;
+}
+
+
+#btn-siguiente {
+    right: -60px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+#btn-retroceder {
+    left: -60px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+
+@media (max-width: 600px) {
+    #btn-cerrar {
+        top: -40px;
+        right: -10px;
+    }
+
+    #btn-siguiente,
+    #btn-retroceder {
+        padding: 8px;
+        font-size: 18px;
+        right: -40px;
+        left: -40px;
+    }
+}
 
 
 footer {
@@ -303,6 +385,7 @@ footer {
 
     .formulario { width: 80%; }
 }
+
 
 
 
