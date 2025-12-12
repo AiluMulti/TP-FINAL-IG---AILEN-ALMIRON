@@ -229,16 +229,19 @@ p {
 
 #galeria {
     column-count: 4;
-    column-gap: 15px;
+    column-gap: 10px;
+    width: 100%;
+    margin: auto;
+    padding: 80px;
 }
 
 .ajustarImg {
     width: 100%;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
     display: block;
-    break-inside: avoid; 
+    break-inside: avoid;
     cursor: pointer;
-    transition: transform 0.3s ease;
+    transition: transform 0.3s;
 }
 
 .ajustarImg:hover {
@@ -260,57 +263,55 @@ p {
 
 #contenedor-interno {
     position: relative;
-    max-width: 90%;
-    max-height: 85%;
+    width: 80vw;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #imagen-activa {
     max-width: 100%;
     max-height: 100%;
-    border-radius: 10px;
-    transition: opacity 0.3s ease;
-    display: block;
-    margin: auto;
+    object-fit: contain;
+    border: 3px solid white;
 }
 
 
 #btn-cerrar,
 #btn-siguiente,
 #btn-retroceder {
-    position: absolute;
-    border: none;
-    background: rgba(255, 255, 255, 0.2);
-    backdrop-filter: blur(5px);
+     position: absolute;
+    background: transparent;
     color: white;
-    font-size: 25px;
-    padding: 12px;
+    border: none;
+    padding: 10px;
+    font-size: 35px;
     cursor: pointer;
-    border-radius: 50%;
-    transition: transform 0.2s ease;
+    transition: 0.2s ease;
 }
 
 #btn-cerrar:hover,
 #btn-siguiente:hover,
 #btn-retroceder:hover {
-    transform: scale(1.15);
+    transform: scale(1.2);
+    color: red;
 }
 
 #btn-cerrar {
-    top: -50px;
-    right: -20px;
+    top: 10px;
+    right: 10px;
 }
 
 
 #btn-siguiente {
     right: -60px;
     top: 50%;
-    transform: translateY(-50%);
 }
 
 #btn-retroceder {
     left: -60px;
     top: 50%;
-    transform: translateY(-50%);
 }
 
 
@@ -406,6 +407,7 @@ footer {
 
     .formulario { width: 80%; }
 }
+
 
 
 
