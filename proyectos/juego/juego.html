@@ -62,6 +62,23 @@
 <footer>© Ailén Almirón Entertainment</footer>
 
 <script>
+
+   var menuSticky = document.getElementById("menu");
+
+	window.addEventListener("scroll", function(){
+		if (window.pageYOffset > 13) {
+			menuSticky.classList.add("scrolled");
+		} else {
+			menuSticky.classList.remove("scrolled");
+		}
+	});
+
+	document.getElementById('registro').addEventListener('submit', function(event) {
+	    event.preventDefault();
+	    document.getElementById('confirmacion').style.display = 'block';
+	});
+
+   
 let atras = "img/atras.png";
 let f1 = "img/frente1.png";
 let f2 = "img/frente2.png";
@@ -234,6 +251,7 @@ function reiniciar() {
 
 </body>
 </html>
+
 
 
 
