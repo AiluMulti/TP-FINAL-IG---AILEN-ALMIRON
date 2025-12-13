@@ -203,15 +203,6 @@ p {
 
 .formu { margin: 10px; }
 
-#confirmacion {
-    display: none;
-    padding-bottom: 100px;
-    color: #F2AEC7;
-    text-align: center;
-    margin: 0 auto;
-    width: 30%;
-}
-
 #presentacion {
     background-color: black;
     color: darkred;
@@ -524,6 +515,7 @@ footer {
 
     .formulario { width: 80%; }
 }
+
 
 
 
