@@ -140,34 +140,40 @@ p {
 .noDecoracion { text-decoration: none; }
 
 #biografia {
-    background-size: cover;
+      display: flex;
+    flex-direction: row;  
+    gap: 20px;
     width: 70%;
-    display: flex;
-    margin: auto;
+    margin: 0;
+    align-items: flex-start;
 }
 
 #personaje-biografia {
     display: flex;
-    padding: 40px;
+    align-items: flex-start;
+    gap: 20px;
 }
 
 .fotoBiografia {
     width: 30%;
+    flex-shrink: 0;
 }
 
 .papel {
     background-image: url(img/papel-biografia.png);
-    background-size: cover;
-    padding: 90px;
-    width: 80%;
-    margin: auto;
+    width: 45%;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    padding: 50px;
+    box-sizing: border-box;
 }
 
 .datosPersonajes {
     width: 40%;
     background-color: rgba(160, 124, 124, 0.226);
-    margin: 10px;
+    margin: 0px;
     text-align: left;
+    margin-top: 0;
 }
 
 
@@ -491,6 +497,7 @@ footer {
 
     .formulario { width: 80%; }
 }
+
 
 
 
