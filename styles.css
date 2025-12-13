@@ -400,12 +400,6 @@ p {
     width: 90px;
   }
 
-  #infoJuego {
-    flex-direction: column;
-    gap: 10px;
-    align-items: center;
-  }
-}
 
 footer {
     position: absolute;  
@@ -416,8 +410,6 @@ footer {
     text-align: center;
     background-color: rgb(102, 0, 0);
 }
-
-
 
 @media (max-width: 600px) {
     #btn-cerrar {
@@ -499,6 +491,7 @@ footer {
 
     .formulario { width: 80%; }
 }
+
 
 
 
