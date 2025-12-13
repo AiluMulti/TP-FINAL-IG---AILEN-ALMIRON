@@ -316,6 +316,79 @@ p {
     top: 50%;
 }
 
+#juego {
+    width: 90vw;
+    max-width: 800px;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 12px;
+    justify-items: center;
+    margin: 0 auto;
+    padding-bottom: 50px;
+}
+
+.carta {
+    width: 100%;
+    object-fit: cover;
+    cursor: pointer;
+    transform-style: preserve-3d;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carta:hover {
+    transform: scale(1.1);
+}
+
+#infoJuego {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#cuenta, #tiempoRestante, #mensaje {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    padding: 10px;
+    margin: 0;
+}
+
+#tituloMemoria {
+    padding-top: 5px;
+    font-size: 40px;
+}
+
+#mensaje {
+    font-size: 50px;
+}
+
+#gifResultado {
+    display: block;
+    margin: 0 auto;
+    width: 70px;
+    padding: 25px;
+}
+
+#btnStart {
+    width: 200px;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+    padding-bottom: 30px;
+}
+
+#btnStart:hover {
+    transform: scale(1.1);
+}
+
+#btnRestart {
+    cursor: pointer;
+    color: darkred;
+    width: 150px;
+    height: 80px;
+    font-family: 'silenthill';
+    background-color: black;
+}
 
 footer {
     position: absolute;  
@@ -409,6 +482,7 @@ footer {
 
     .formulario { width: 80%; }
 }
+
 
 
 
