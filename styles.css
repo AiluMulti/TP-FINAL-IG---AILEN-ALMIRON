@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'silenthill';
-    src: url(../fuente/SLNTHLE.ttf);
+    src: url(../fuente/slnthle.ttf);
 }
 
 body {
@@ -491,6 +491,7 @@ footer {
 
     .formulario { width: 80%; }
 }
+
 
 
 
