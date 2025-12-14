@@ -1,11 +1,3 @@
- var menuSticky = document.getElementById("menu");
-        window.addEventListener("scroll", function () {
-            if (window.pageYOffset > 13) {
-                menuSticky.classList.add("scrolled");
-            } else {
-                menuSticky.classList.remove("scrolled");
-            }
-        });
 
         const imagenes = document.querySelectorAll('.ajustarImg');
         const contenedor = document.getElementById('contenedor-principal');
@@ -47,3 +39,4 @@
 
         /*ACCORDION NOTICIAS*/
         console.log("script cargado");
+
