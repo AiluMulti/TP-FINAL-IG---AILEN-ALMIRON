@@ -8,7 +8,7 @@ const menuSticky = document.getElementById("menu");
 
         document.querySelectorAll(".borde").forEach(item => {
             item.addEventListener("click", () => {
-                const audio = new Audio("audio/sfx.mp3");
+                const audio = new Audio("../../sfx.mp3");
                 audio.play();
             });
         });
@@ -64,3 +64,4 @@ const menuSticky = document.getElementById("menu");
 
         /*ACCORDION NOTICIAS*/
         console.log("script cargado");
+
