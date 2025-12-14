@@ -435,86 +435,166 @@ footer {
     background-color: rgb(102, 0, 0);
 }
 
-@media (max-width: 600px) {
-    #btn-cerrar {
-        top: -40px;
-        right: -10px;
-    }
-
-    #btn-siguiente,
-    #btn-retroceder {
-        padding: 8px;
-        font-size: 18px;
-        right: -40px;
-        left: -40px;
-    }
+@media (max-width: 900px) {
+    #galeria { column-count: 3; }
+    #presentacion { width: 80%; }
 }
+
+@media (max-width: 600px) {
+    #galeria { column-count: 2; }
+}
+
+@media (max-width: 400px) {
+    #galeria { column-count: 1; }
+}
+
 
 
 @media (max-width: 768px) {
 
-    #menu ul {
-        display: none;
+#galeria { column-count: 3; 
+}
+
+#presentacion { width: 80%; 
+}
+
+.img-noticias-acordeon{
+width: 400px;
+padding-left: 30px;
+}
+}
+
+@media (max-width: 768px) {
+
+#menu ul {
+display: none;
+flex-direction: column;
+position: absolute;
+top: 60px;
+left: 0;
+width: 100%;
+background-color: rgba(0,0,0,0.9);
+padding: 0;
+margin: 0;
+z-index: 999;
+}
+
+#menu ul li {
+padding: 15px 0;
+text-align: center;
+}
+
+#menu label {
+display: block;
+}
+
+#menu-toggle:checked + label + ul {
+display: flex;
+}
+
+.tituloBienvenido, .textoBienvenido {
+flex-direction: column;
+align-items: center;
+}
+
+#personaje-biografia {
+flex-direction: column;
+align-items: center;
+padding: 20px; 
+}
+
+.fotoBiografia, .datosPersonajes {
+width: 90%;
+margin: 10px 0;
+}
+
+.historia {
+width: 95%;
+padding: 20px;
+}
+
+
+.noticias {
+width: 90%;
+padding: 15px;
+}
+
+
+#galeria {
+column-count: 1 !important;
+padding: 20px;
+}
+
+   
+#presentacion {
+width: 90%;
+}
+
+#juego {
+grid-template-columns: repeat(2, 1fr);
+gap: 10px;
+}
+
+.carta{
+width: 60%;
+}
+
+.img-noticias-acordeon{
+width: 250px;
+padding-left: 30px;
+}
+
+.videosh{
+width: 300px;
+}
+
+.historia img{
+    width: 300px;
+}
+
+.logo{
+    width: 200px;
+}
+
+.formulario{
+    width: 80%;
+}
+
+ #personaje-biografia,
+    #biografia {
         flex-direction: column;
-        position: absolute;
-        top: 60px;
-        left: 0;
-        width: 100%;
-        background-color: rgba(0,0,0,0.9);
-        z-index: 999;
     }
-
-    #menu ul li {
-        padding: 15px 0;
-        text-align: center;
-    }
-
-    #menu label { display: block; }
-
-    #menu-toggle:checked + label + ul {
-        display: flex;
-    }
-
-    .tituloBienvenido, .textoBienvenido {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    #personaje-biografia {
-        flex-direction: column;
-        align-items: center;
-        padding: 20px;
-    }
-
-    .fotoBiografia, .datosPersonajes {
-        width: 90%;
-        margin: 10px 0;
-    }
-
-    .historia {
-        width: 95%;
-        padding: 20px;
-    }
-
-    .videosh { width: 300px; }
-
-    .historia img { width: 300px; }
-
-    .logo { width: 200px; }
-
-    .formulario { width: 80%; }
 }
 
 @media (max-width: 480px) {
-
-    .videosh { width: 200px; }
-
-    .historia img { width: 250px; }
-
-    .logo { width: 200px; }
-
-    .formulario { width: 80%; }
+#galeria { column-count: 2; 
 }
+
+.img-noticias-acordeon{
+width: 200px;
+padding-left: 0px;
+}
+
+.videosh{
+    width: 200px;
+}
+
+.historia img{
+    width: 250px;
+}
+
+.logo{
+    width: 200px;
+}
+
+.formulario{
+    width: 80%;
+}
+
+
+
+}
+
 
 
 
