@@ -1,3 +1,8 @@
+const menuSticky = document.getElementById("menu");
+        window.addEventListener("scroll", () => {
+            menuSticky.classList.toggle("scrolled", window.pageYOffset > 13);
+        });
+
 let atras = "img/atras.png";
 let f1 = "img/frente1.png";
 let f2 = "img/frente2.png";
@@ -165,4 +170,5 @@ function reiniciar() {
   btnRestart.style.display = "none";
   document.getElementById("gifResultado").style.display = "none";
   empezar();
+
 }
